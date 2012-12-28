@@ -29,7 +29,7 @@
                    2)
                 x)))
 
-(sqrt-iter 1 2)
-(sqrt-iter 1 10)
-(sqrt-iter2 1 2)
-(sqrt-iter2 1 10)
+(sqrt-iter 1.0 2)
+(sqrt-iter 1.0 10)
+(sqrt-iter2 1.0 2)
+(sqrt-iter2 1.0 10)
