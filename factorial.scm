@@ -1,3 +1,4 @@
+;线性递归
 (define (factorial n)
   (if (= n 1)
     1
@@ -6,6 +7,7 @@
 (factorial 3)
 (factorial 10)
 
+;线性迭代
 (define (factorial n)
   (fact-iter 1 1 n))
 
@@ -18,6 +20,7 @@
 
 (factorial 6)
 
+;隐藏具体实现
 (define (factorial n)
   (define (fact-iter product count)
     (if (> count n)

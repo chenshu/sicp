@@ -3,16 +3,14 @@
         ((= n 1) 1)
         (else (+ (fib (- n 1)) (fib (- n 2))))))
 
-(fib 5)
-(fib 6)
+;(fib 40)
 
 (define (fib n)
-  (fib-iter 1 0 n))
+  (fib-iter 0 1 n))
 
 (define (fib-iter a b count)
   (if (= count 0)
-    b
-    (fib-iter (+ a b) a (- count 1))))
+    a
+    (fib-iter b (+ a b) (- count 1))))
 
-(fib 5)
-(fib 6)
+(fib 40)
