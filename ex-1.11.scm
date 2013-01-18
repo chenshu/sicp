@@ -11,11 +11,11 @@
   (cond ((<= n 0) 0)
         ((= n 1) 1)
         ((= n 2) 2)
-        (else (func_iter 0 1 2 2 n))))
+        (else (func_iter 0 1 2 n))))
 
-(define (func_iter a b c count max_count)
-  (if (= count max_count)
-    c
-    (func_iter b c (+ c (* 2 b) (* 3 a)) (+ count 1) max_count)))
+(define (func_iter a b c count)
+  (if (= count 0)
+    a
+    (func_iter b c (+ c (* 2 b) (* 3 a)) (- count 1))))
 
 (func2 24)
